@@ -14,8 +14,8 @@ const App: React.FC = () => {
     <div className="relative min-h-screen w-full flex flex-col">
       {/* Fixed Background */}
       <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-black/30 z-10 opacity-90"></div>
+        {/* Camada de escurecimento sutil e uniforme, sem gradiente pesado no fundo */}
+        <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div 
           className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-[10s] ease-out scale-105"
           style={{ backgroundImage: `url('${HERO_BG}')` }}

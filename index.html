@@ -41,6 +41,9 @@
                         'bounce-slow': 'bounce 3s infinite',
                         'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
                         'pulse-ring': 'pulse-ring 2s cubic-bezier(0.24, 0, 0.38, 1) infinite',
+                        'message-in-left': 'messageInLeft 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+                        'message-in-right': 'messageInRight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+                        'pop-avatar': 'popAvatar 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
                     },
                     keyframes: {
                         fadeInUp: {
@@ -51,6 +54,19 @@
                             '0%': { transform: 'scale(0.95)', boxShadow: '0 0 0 0 rgba(216, 86, 79, 0.7)' },
                             '70%': { transform: 'scale(1)', boxShadow: '0 0 0 10px rgba(216, 86, 79, 0)' },
                             '100%': { transform: 'scale(0.95)', boxShadow: '0 0 0 0 rgba(216, 86, 79, 0)' },
+                        },
+                        messageInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-20px) scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+                        },
+                        messageInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(20px) scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'translateX(0) scale(1)' },
+                        },
+                        popAvatar: {
+                            '0%': { transform: 'scale(0)' },
+                            '60%': { transform: 'scale(1.1)' },
+                            '100%': { transform: 'scale(1)' },
                         }
                     }
                 },
